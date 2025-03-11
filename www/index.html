@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Afirmaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div> <!-- Fondo con tréboles -->
+    <div class="container">
+        <h1 class="title">Contador de Afirmaciones</h1>
+        <div class="counter-display" id="counter">0</div>
+        <div class="music-controls">
+            <button id="play-pause" class="music-btn">🎵 Play</button>
+            <button id="stop" class="music-btn">⏹ Stop</button>
+        </div>
+    </div>
+
+    <!-- Reproductor de audio -->
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

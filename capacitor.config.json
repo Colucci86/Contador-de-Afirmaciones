@@ -1,0 +1,6 @@
+{
+  "appId": "com.miaplicacion.contadorafirmaciones",
+  "appName": "Contador De Afirmaciones",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
