@@ -1,0 +1,22 @@
+.gitlab-ci.yml
+image: node:20
+
+stages:
+  - build
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install -g cordova
+  - npm install
+
+build:
+  stage: build
+  script:
+    - cordova platform add android
+    - cordova build android
+  artifacts:
+    paths:
+      - platforms/android/app/build/outputs/apk/
